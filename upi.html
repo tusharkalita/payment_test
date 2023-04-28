@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head><style>
+        .button {
+          background-color: #e80a0a; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        .button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #af4c4c;
+}
+</style>
+        <title>UPI Payment</title>
+        <script type="text/javascript">
+            var ac;
+            function onload(){
+                var type = window.location.hash.substring(1);
+                $("a").attr("href", "upi://pay?pa=plak.in@upi&amp;pn=PlakIndiaK&amp;cu=INR&am="+type);
+            }
+            </script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+        
+    </head>
+    <body onload="onload()">
+        <h2>UPI Pay</h2>
+        <br>
+        <button class="button button1"><a href="http://pay?pa=plak.in@upi&amp;pn=Plak IndiaK&amp;cu=INR&am=value" class="upi-pay1">Pay Now !</a></button>
+        
+        <!-- <script>
+            $("a").attr("href", "http://pay?pa=plak.in@upi&amp;pn=Plak IndiaK&amp;cu=INR&am=");
+          </script> -->
+        </body>
+</html>
